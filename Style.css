@@ -171,3 +171,62 @@ footer {
         width: 100%;
     }
   }
+/* Login Page */
+
+.login-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.login-box h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-box > p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    background: #0f172a;
+    color: white;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #38bdf8;
+}
+
+.login-box button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.register-text {
+    margin-top: 25px !important;
+    margin-bottom: 0 !important;
+}
+
+.register-text a {
+    color: #38bdf8;
+    text-decoration: none;
+    }
