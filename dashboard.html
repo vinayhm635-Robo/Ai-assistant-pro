@@ -2,268 +2,411 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dashboard | Smart Solution</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DealMate AI | Dashboard</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body>
+<body class="app-body">
 
-    <!-- NAVIGATION -->
 
-    <header>
+    <!-- TOP NAVIGATION -->
 
-        <div class="logo">
-            SMART SOLUTION
+    <header class="app-navbar">
+
+        <div class="brand">
+            <span class="brand-icon">✦</span>
+            DealMate <span>AI</span>
         </div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="#" onclick="logoutUser()">Logout</a>
-        </nav>
+        <div class="app-user">
+
+            <span id="userNameDisplay">
+                User
+            </span>
+
+            <button
+                class="logout-button"
+                onclick="logoutUser()">
+                Logout
+            </button>
+
+        </div>
 
     </header>
 
 
-    <!-- DASHBOARD -->
-
-    <main class="dashboard">
-
-        <!-- Welcome -->
-
-        <section class="welcome">
-
-            <p class="tagline">
-                SMART PLATFORM
-            </p>
-
-            <h1 id="welcomeName">
-                Welcome 👋
-            </h1>
-
-            <p>
-                Your intelligent solution is ready.
-            </p>
-
-        </section>
+    <main class="app-main">
 
 
-        <!-- STATUS -->
+        <!-- WELCOME -->
 
-        <section class="status-card">
+        <section class="dashboard-welcome">
 
             <div>
-                <span class="status-dot"></span>
 
-                <strong>
-                    System Online
-                </strong>
-            </div>
-
-            <span>
-                Ready to use
-            </span>
-
-        </section>
-
-
-        <!-- MAIN FEATURES -->
-
-        <section class="dashboard-container">
-
-
-            <!-- Main Solution -->
-
-            <div class="dashboard-card main-card">
-
-                <div class="dashboard-icon">
-                    🚀
+                <div class="status-pill">
+                    ● ALL AGENTS ONLINE
                 </div>
 
-                <h2>
-                    Main Solution
-                </h2>
+                <h1 id="welcomeName">
+                    Good to see you 👋
+                </h1>
 
                 <p>
-                    Start the main software functionality
-                    and solve the identified problem.
+                    Tell your AI shopping team what you're looking for.
                 </p>
-
-                <button onclick="startFeature()">
-                    Start Now →
-                </button>
-
-            </div>
-
-
-            <!-- AI -->
-
-            <div class="dashboard-card">
-
-                <div class="dashboard-icon">
-                    🤖
-                </div>
-
-                <h2>
-                    AI Assistant
-                </h2>
-
-                <p>
-                    Get intelligent assistance and
-                    recommendations.
-                </p>
-
-                <button onclick="openAI()">
-                    Open AI
-                </button>
-
-            </div>
-
-
-            <!-- Activity -->
-
-            <div class="dashboard-card">
-
-                <div class="dashboard-icon">
-                    📊
-                </div>
-
-                <h2>
-                    Activity
-                </h2>
-
-                <p>
-                    View your previous activities
-                    and results.
-                </p>
-
-                <button onclick="showActivity()">
-                    View Activity
-                </button>
-
-            </div>
-
-
-            <!-- Profile -->
-
-            <div class="dashboard-card">
-
-                <div class="dashboard-icon">
-                    👤
-                </div>
-
-                <h2>
-                    Profile
-                </h2>
-
-                <p>
-                    View your account information
-                    and profile details.
-                </p>
-
-                <button onclick="showProfile()">
-                    View Profile
-                </button>
 
             </div>
 
         </section>
 
 
-        <!-- QUICK ACTIONS -->
+        <!-- AGENT STATUS -->
 
-        <section class="quick-section">
+        <section class="agent-status-grid">
 
-            <h2>
-                Quick Actions
-            </h2>
 
-            <div class="quick-container">
+            <div class="mini-agent preference">
 
-                <button onclick="startFeature()">
-                    🚀 Start Solution
-                </button>
+                <div class="mini-icon">
+                    🧠
+                </div>
 
-                <button onclick="openAI()">
-                    🤖 Ask AI
-                </button>
+                <div>
+                    <small>
+                        AGENT 01
+                    </small>
 
-                <button onclick="showActivity()">
-                    📊 History
-                </button>
+                    <h3>
+                        Preference Agent
+                    </h3>
+
+                    <span>
+                        ● Learning preferences
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="mini-agent hunter">
+
+                <div class="mini-icon">
+                    🔎
+                </div>
+
+                <div>
+                    <small>
+                        AGENT 02
+                    </small>
+
+                    <h3>
+                        Deal Hunter
+                    </h3>
+
+                    <span>
+                        ● Catalog ready
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="mini-agent negotiator">
+
+                <div class="mini-icon">
+                    🤝
+                </div>
+
+                <div>
+                    <small>
+                        AGENT 03
+                    </small>
+
+                    <h3>
+                        Negotiator
+                    </h3>
+
+                    <span>
+                        ● Ready to negotiate
+                    </span>
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- MAIN WORK AREA -->
+        <!-- SHOPPING REQUEST -->
 
-        <section class="feature-area">
+        <section class="shopping-panel">
 
-            <div class="feature-header">
+            <div class="panel-title">
 
                 <div>
 
-                    <p class="tagline">
-                        APPLICATION
-                    </p>
+                    <span>
+                        STEP 01
+                    </span>
 
                     <h2>
-                        Problem Solver
+                        What are you looking for?
+                    </h2>
+
+                    <p>
+                        Talk naturally. Our Preference Agent
+                        will understand your needs.
+                    </p>
+
+                </div>
+
+                <div class="brain-icon">
+                    🧠
+                </div>
+
+            </div>
+
+
+            <textarea
+                id="shoppingRequest"
+                placeholder="Example: I need wireless headphones under ₹5,000 with good battery life..."
+            ></textarea>
+
+
+            <div class="quick-prompts">
+
+                <button onclick="usePrompt('I need wireless headphones under ₹5000 with good battery life')">
+                    🎧 Headphones
+                </button>
+
+                <button onclick="usePrompt('I need a laptop under ₹60000 for coding and gaming')">
+                    💻 Laptop
+                </button>
+
+                <button onclick="usePrompt('I need running shoes under ₹4000 that are comfortable')">
+                    👟 Running shoes
+                </button>
+
+            </div>
+
+
+            <button
+                class="search-button"
+                onclick="startShopping()">
+
+                ✦ Ask My AI Shopping Team →
+
+            </button>
+
+        </section>
+
+
+        <!-- PREFERENCE RESULT -->
+
+        <section
+            id="preferenceResult"
+            class="agent-result hidden">
+
+            <div class="result-agent-icon">
+                🧠
+            </div>
+
+            <div class="result-content">
+
+                <span>
+                    PREFERENCE AGENT
+                </span>
+
+                <h3>
+                    I understand what you're looking for.
+                </h3>
+
+                <p id="preferenceText">
+                </p>
+
+                <div
+                    id="preferenceTags"
+                    class="preference-tags">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEAL HUNTER -->
+
+        <section
+            id="productsSection"
+            class="products-section hidden">
+
+            <div class="section-title-row">
+
+                <div>
+
+                    <span>
+                        AGENT 02 • DEAL HUNTER
+                    </span>
+
+                    <h2>
+                        Best matches found
                     </h2>
 
                 </div>
 
-                <span class="live-badge">
-                    ● LIVE
-                </span>
+                <div class="match-count">
+                    <strong id="matchCount">0</strong>
+                    matches
+                </div>
 
             </div>
 
 
-            <div class="input-area">
+            <div
+                id="productsGrid"
+                class="products-grid">
+            </div>
 
-                <label>
-                    Enter your requirement
-                </label>
+        </section>
 
-                <textarea
-                    id="problemInput"
-                    placeholder="Describe what you want to solve..."
-                ></textarea>
 
-                <button onclick="processProblem()">
-                    Analyze Solution →
+        <!-- NEGOTIATION -->
+
+        <section
+            id="negotiationSection"
+            class="negotiation-section hidden">
+
+            <div class="negotiation-header">
+
+                <div class="negotiation-icon">
+                    🤝
+                </div>
+
+                <div>
+
+                    <span>
+                        AGENT 03 • NEGOTIATION AGENT
+                    </span>
+
+                    <h2>
+                        Let's make a better deal.
+                    </h2>
+
+                    <p>
+                        Select products and ask the Negotiation
+                        Agent to build your best offer.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="negotiation-options">
+
+                <button onclick="negotiateBundle()">
+                    🤝 Negotiate Best Bundle
+                </button>
+
+                <button onclick="negotiateDiscount()">
+                    💰 Ask for Better Price
                 </button>
 
             </div>
 
 
-            <!-- RESULT -->
-
             <div
-                id="resultBox"
-                class="result-box"
-            >
+                id="dealResult"
+                class="deal-result hidden">
+            </div>
 
-                <div class="result-icon">
-                    💡
-                </div>
+        </section>
+
+
+        <!-- ACTIVITY -->
+
+        <section class="activity-section">
+
+            <div class="section-title-row">
 
                 <div>
 
-                    <h3>
-                        Solution Result
-                    </h3>
+                    <span>
+                        YOUR SESSION
+                    </span>
 
-                    <p id="resultText">
-                        Your result will appear here.
-                    </p>
+                    <h2>
+                        Shopping Summary
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-grid">
+
+                <div class="summary-card">
+
+                    <span>
+                        💰
+                    </span>
+
+                    <div>
+                        <small>
+                            Budget
+                        </small>
+
+                        <strong id="summaryBudget">
+                            —
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <span>
+                        🔎
+                    </span>
+
+                    <div>
+                        <small>
+                            Products Found
+                        </small>
+
+                        <strong id="summaryProducts">
+                            0
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <span>
+                        🏷️
+                    </span>
+
+                    <div>
+                        <small>
+                            Potential Saving
+                        </small>
+
+                        <strong id="summarySaving">
+                            ₹0
+                        </strong>
+                    </div>
 
                 </div>
 
@@ -271,10 +414,9 @@
 
         </section>
 
+
     </main>
 
-
-    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
