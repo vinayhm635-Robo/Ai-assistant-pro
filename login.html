@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Login - Smart Solution</title>
+    <title>Login | DealMate AI</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -16,66 +16,51 @@
 
 <body>
 
+    <header class="navbar">
 
-    <!-- Header -->
-
-    <header>
-
-        <div class="logo">
-            SMART SOLUTION
-        </div>
+        <a href="index.html" class="brand">
+            <span class="brand-icon">✦</span>
+            DealMate <span>AI</span>
+        </a>
 
         <nav>
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="register.html">
-                Register
-            </a>
-
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
         </nav>
 
     </header>
 
 
-    <!-- Login -->
-
     <main class="auth-page">
 
         <div class="auth-box">
 
-            <div class="auth-icon">
-                🔐
+            <div class="auth-logo">
+                ✦
             </div>
 
             <h1>
-                Welcome Back
+                Welcome back
             </h1>
 
-            <p class="auth-subtitle">
-                Login to continue
+            <p>
+                Continue your smart shopping journey.
             </p>
 
 
             <form onsubmit="loginUser(event)">
 
-                <label>
-                    Email
-                </label>
+                <label>Email address</label>
 
                 <input
                     type="email"
                     id="email"
-                    placeholder="Enter your email"
+                    placeholder="you@example.com"
                     required
                 >
 
 
-                <label>
-                    Password
-                </label>
+                <label>Password</label>
 
                 <input
                     type="password"
@@ -85,21 +70,18 @@
                 >
 
 
-                <button type="submit">
-                    Login →
+                <button type="submit" class="full-button">
+                    Enter DealMate →
                 </button>
 
             </form>
 
 
-            <p class="bottom-text">
-
+            <p class="auth-bottom">
                 Don't have an account?
-
                 <a href="register.html">
-                    Create Account
+                    Create one
                 </a>
-
             </p>
 
         </div>
