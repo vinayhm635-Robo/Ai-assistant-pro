@@ -2,15 +2,20 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Create Account - Smart Solution</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
 
     <!-- Header -->
 
@@ -21,27 +26,44 @@
         </div>
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="login.html">Login</a>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
         </nav>
 
     </header>
 
 
-    <!-- Register Section -->
+    <!-- Registration -->
 
-    <main class="login-page">
+    <main class="auth-page">
 
-        <div class="login-box">
+        <div class="auth-box">
 
-            <h1>Create Account</h1>
+            <div class="auth-icon">
+                👤
+            </div>
 
-            <p>Join our smart platform</p>
+            <h1>
+                Create Account
+            </h1>
+
+            <p class="auth-subtitle">
+                Join our smart platform
+            </p>
 
 
             <form onsubmit="registerUser(event)">
 
-                <!-- Name -->
+                <label>
+                    Full Name
+                </label>
 
                 <input
                     type="text"
@@ -51,7 +73,9 @@
                 >
 
 
-                <!-- Email -->
+                <label>
+                    Email
+                </label>
 
                 <input
                     type="email"
@@ -61,7 +85,9 @@
                 >
 
 
-                <!-- Password -->
+                <label>
+                    Password
+                </label>
 
                 <input
                     type="password"
@@ -71,7 +97,9 @@
                 >
 
 
-                <!-- Confirm Password -->
+                <label>
+                    Confirm Password
+                </label>
 
                 <input
                     type="password"
@@ -81,8 +109,6 @@
                 >
 
 
-                <!-- Register Button -->
-
                 <button type="submit">
                     Create Account →
                 </button>
@@ -90,9 +116,7 @@
             </form>
 
 
-            <!-- Login Link -->
-
-            <p class="register-text">
+            <p class="bottom-text">
 
                 Already have an account?
 
@@ -107,10 +131,8 @@
     </main>
 
 
-    <!-- JavaScript -->
-
     <script src="script.js"></script>
 
 </body>
 
-              </html>
+</html>
