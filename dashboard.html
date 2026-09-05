@@ -2,22 +2,17 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Dashboard - Smart Solution</title>
+    <title>Dashboard | Smart Solution</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-
-    <!-- Header -->
+    <!-- NAVIGATION -->
 
     <header>
 
@@ -26,67 +21,86 @@
         </div>
 
         <nav>
-
-            <a href="dashboard.html">
-                Dashboard
-            </a>
-
-            <a href="#" onclick="logoutUser()">
-                Logout
-            </a>
-
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="#" onclick="logoutUser()">Logout</a>
         </nav>
 
     </header>
 
 
-    <!-- Dashboard -->
+    <!-- DASHBOARD -->
 
     <main class="dashboard">
 
-        <div class="welcome">
+        <!-- Welcome -->
+
+        <section class="welcome">
 
             <p class="tagline">
                 SMART PLATFORM
             </p>
 
-            <h1>
-                Welcome to your Dashboard 👋
+            <h1 id="welcomeName">
+                Welcome 👋
             </h1>
 
             <p>
-                Select an option below to continue.
+                Your intelligent solution is ready.
             </p>
 
-        </div>
+        </section>
 
 
-        <!-- Dashboard Cards -->
+        <!-- STATUS -->
 
-        <div class="dashboard-container">
+        <section class="status-card">
+
+            <div>
+                <span class="status-dot"></span>
+
+                <strong>
+                    System Online
+                </strong>
+            </div>
+
+            <span>
+                Ready to use
+            </span>
+
+        </section>
 
 
-            <div class="dashboard-card">
+        <!-- MAIN FEATURES -->
+
+        <section class="dashboard-container">
+
+
+            <!-- Main Solution -->
+
+            <div class="dashboard-card main-card">
 
                 <div class="dashboard-icon">
                     🚀
                 </div>
 
                 <h2>
-                    Start Solution
+                    Main Solution
                 </h2>
 
                 <p>
-                    Start using the main software
-                    functionality.
+                    Start the main software functionality
+                    and solve the identified problem.
                 </p>
 
                 <button onclick="startFeature()">
-                    Start →
+                    Start Now →
                 </button>
 
             </div>
 
+
+            <!-- AI -->
 
             <div class="dashboard-card">
 
@@ -99,16 +113,18 @@
                 </h2>
 
                 <p>
-                    Interact with the intelligent
-                    assistant.
+                    Get intelligent assistance and
+                    recommendations.
                 </p>
 
                 <button onclick="openAI()">
-                    Open AI →
+                    Open AI
                 </button>
 
             </div>
 
+
+            <!-- Activity -->
 
             <div class="dashboard-card">
 
@@ -121,64 +137,147 @@
                 </h2>
 
                 <p>
-                    View your recent activity and
-                    information.
+                    View your previous activities
+                    and results.
                 </p>
 
                 <button onclick="showActivity()">
-                    View →
+                    View Activity
                 </button>
 
             </div>
 
+
+            <!-- Profile -->
 
             <div class="dashboard-card">
 
                 <div class="dashboard-icon">
-                    ⚙️
+                    👤
                 </div>
 
                 <h2>
-                    Settings
+                    Profile
                 </h2>
 
                 <p>
-                    Manage your application settings.
+                    View your account information
+                    and profile details.
                 </p>
 
-                <button onclick="showSettings()">
-                    Settings →
+                <button onclick="showProfile()">
+                    View Profile
                 </button>
 
             </div>
 
-        </div>
+        </section>
 
 
-        <!-- Main Feature Area -->
+        <!-- QUICK ACTIONS -->
+
+        <section class="quick-section">
+
+            <h2>
+                Quick Actions
+            </h2>
+
+            <div class="quick-container">
+
+                <button onclick="startFeature()">
+                    🚀 Start Solution
+                </button>
+
+                <button onclick="openAI()">
+                    🤖 Ask AI
+                </button>
+
+                <button onclick="showActivity()">
+                    📊 History
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAIN WORK AREA -->
 
         <section class="feature-area">
 
-            <h2>
-                Your Smart Solution
-            </h2>
+            <div class="feature-header">
 
-            <p>
-                The main functionality of Problem Statement 1
-                will be developed here.
-            </p>
+                <div>
 
-            <button onclick="startFeature()">
-                Start Now 🚀
-            </button>
+                    <p class="tagline">
+                        APPLICATION
+                    </p>
+
+                    <h2>
+                        Problem Solver
+                    </h2>
+
+                </div>
+
+                <span class="live-badge">
+                    ● LIVE
+                </span>
+
+            </div>
+
+
+            <div class="input-area">
+
+                <label>
+                    Enter your requirement
+                </label>
+
+                <textarea
+                    id="problemInput"
+                    placeholder="Describe what you want to solve..."
+                ></textarea>
+
+                <button onclick="processProblem()">
+                    Analyze Solution →
+                </button>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div
+                id="resultBox"
+                class="result-box"
+            >
+
+                <div class="result-icon">
+                    💡
+                </div>
+
+                <div>
+
+                    <h3>
+                        Solution Result
+                    </h3>
+
+                    <p id="resultText">
+                        Your result will appear here.
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
     </main>
 
 
+    <!-- JAVASCRIPT -->
+
     <script src="script.js"></script>
 
 </body>
 
-  </html>
+</html>
