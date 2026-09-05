@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Smart Solution</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">SMART SOLUTION</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="login-page">
+
+        <div class="login-box">
+
+            <h1>Welcome Back</h1>
+
+            <p>Login to continue</p>
+
+            <form onsubmit="loginUser(event)">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit">
+                    Login →
+                </button>
+
+            </form>
+
+            <p class="register-text">
+                Don't have an account?
+                <a href="register.html">Create Account</a>
+            </p>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
