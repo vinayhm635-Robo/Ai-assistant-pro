@@ -5,8 +5,7 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Login | DealMate AI</title>
 
@@ -16,81 +15,120 @@
 
 <body>
 
-    <header class="navbar">
+<header class="simple-navbar">
 
-        <a href="index.html" class="brand">
-            <span class="brand-icon">✦</span>
-            DealMate <span>AI</span>
-        </a>
+    <a href="index.html" class="logo">
+        ✦ DealMate AI
+    </a>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="register.html">Register</a>
-        </nav>
+    <a href="index.html" class="back-link">
+        ← Home
+    </a>
 
-    </header>
+</header>
 
 
-    <main class="auth-page">
+<main class="login-page">
 
-        <div class="auth-box">
+    <div class="login-visual">
 
-            <div class="auth-logo">
-                ✦
-            </div>
-
-            <h1>
-                Welcome back
-            </h1>
-
-            <p>
-                Continue your smart shopping journey.
-            </p>
-
-
-            <form onsubmit="loginUser(event)">
-
-                <label>Email address</label>
-
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="you@example.com"
-                    required
-                >
-
-
-                <label>Password</label>
-
-                <input
-                    type="password"
-                    id="password"
-                    placeholder="Enter your password"
-                    required
-                >
-
-
-                <button type="submit" class="full-button">
-                    Enter DealMate →
-                </button>
-
-            </form>
-
-
-            <p class="auth-bottom">
-                Don't have an account?
-                <a href="register.html">
-                    Create one
-                </a>
-            </p>
-
+        <div class="login-symbol">
+            ✦
         </div>
 
-    </main>
+        <h1>
+            Smarter shopping
+            starts here.
+        </h1>
+
+        <p>
+            Sign in to continue with your
+            personalized AI shopping experience.
+        </p>
+
+    </div>
 
 
-    <script src="script.js"></script>
+    <div class="login-form-box">
+
+        <div class="section-label">
+            DEALMATE AI
+        </div>
+
+        <h2>
+            Welcome back
+        </h2>
+
+        <p class="form-intro">
+            Enter your details to continue.
+        </p>
+
+
+        <form id="loginForm">
+
+            <label>
+                Email address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+            >
+
+
+            <label>
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+            >
+
+
+            <button
+                type="submit"
+                class="primary-btn full-btn"
+            >
+                Sign In →
+            </button>
+
+        </form>
+
+
+        <div id="loginMessage"></div>
+
+
+        <p class="login-note">
+            Don't have an account?
+            <a href="app.html">
+                Start shopping
+            </a>
+        </p>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        ✦ DealMate AI
+    </div>
+
+    <small>
+        © 2026 DealMate AI
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
