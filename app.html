@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | DealMate AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        ✦ DealMate AI
+    </a>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="login.html">
+            Login
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="shop-page">
+
+    <div class="shop-header">
+
+        <div class="section-label">
+            AI SHOPPING ASSISTANT
+        </div>
+
+        <h1>
+            What are you looking for?
+        </h1>
+
+        <p>
+            Choose a category and tell your AI shopping team
+            what you need.
+        </p>
+
+    </div>
+
+
+    <!-- CATEGORY -->
+
+    <section class="category-section">
+
+        <h2>
+            Choose a category
+        </h2>
+
+        <p class="category-description">
+            Select one to continue.
+        </p>
+
+
+        <div class="category-row">
+
+            <button
+                class="category-card"
+                data-category="Laptop"
+            >
+
+                <div class="category-icon">
+                    💻
+                </div>
+
+                <strong>
+                    Laptop
+                </strong>
+
+                <span>
+                    Computers
+                </span>
+
+            </button>
+
+
+            <button
+                class="category-card"
+                data-category="Headphones"
+            >
+
+                <div class="category-icon">
+                    🎧
+                </div>
+
+                <strong>
+                    Headphones
+                </strong>
+
+                <span>
+                    Audio
+                </span>
+
+            </button>
+
+
+            <button
+                class="category-card"
+                data-category="Shoes"
+            >
+
+                <div class="category-icon">
+                    👟
+                </div>
+
+                <strong>
+                    Shoes
+                </strong>
+
+                <span>
+                    Footwear
+                </span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SHOPPING FORM -->
+
+    <section class="shopping-panel">
+
+        <div class="selected-category">
+
+            <span>
+                SELECTED CATEGORY
+            </span>
+
+            <strong id="selectedCategory">
+                Select a category
+            </strong>
+
+        </div>
+
+
+        <form id="shoppingForm">
+
+            <div class="form-group">
+
+                <label>
+                    What product do you want?
+                </label>
+
+                <div class="search-input">
+
+                    <span>
+                        🔎
+                    </span>
+
+                    <input
+                        type="text"
+                        id="product"
+                        placeholder="Example: Gaming laptop"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-two-columns">
+
+                <div class="form-group">
+
+                    <label>
+                        Maximum budget
+                    </label>
+
+                    <input
+                        type="number"
+                        id="budget"
+                        placeholder="₹60,000"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Shopping priority
+                    </label>
+
+                    <select id="preference">
+
+                        <option>
+                            Lowest Price
+                        </option>
+
+                        <option>
+                            Best Quality
+                        </option>
+
+                        <option>
+                            Best Rating
+                        </option>
+
+                        <option>
+                            Fast Delivery
+                        </option>
+
+                        <option>
+                            Best Overall Value
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Additional requirements
+                </label>
+
+                <textarea
+                    id="requirements"
+                    placeholder="Example: 16GB RAM, good battery, black colour..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="primary-btn search-btn"
+            >
+                Find My Best Deal →
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- AGENT PREVIEW -->
+
+    <section class="mini-agents">
+
+        <div class="mini-agent">
+
+            <span>🧠</span>
+
+            <div>
+                <strong>Preference Agent</strong>
+                <small>Understands your needs</small>
+            </div>
+
+        </div>
+
+
+        <div class="mini-agent">
+
+            <span>🔎</span>
+
+            <div>
+                <strong>Deal-Hunter</strong>
+                <small>Finds better prices</small>
+            </div>
+
+        </div>
+
+
+        <div class="mini-agent">
+
+            <span>🤝</span>
+
+            <div>
+                <strong>Negotiation Agent</strong>
+                <small>Finds extra savings</small>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        ✦ DealMate AI
+    </div>
+
+    <p>
+        Your AI shopping team
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
