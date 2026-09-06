@@ -1,55 +1,123 @@
-# DealMate AI
+# ✦ DealMate AI
 
 ## Agentic Personal Shopping Negotiator
 
-DealMate AI is a multi-agent shopping assistant designed to provide personalized product recommendations and real-time deal negotiation.
+DealMate AI is a frontend prototype for an intelligent
+personal shopping assistant.
 
-## Problem
+The system uses specialized AI agents to help users
+find, compare and negotiate better shopping deals.
 
-Traditional recommendation systems mainly suggest products. They do not understand the customer's complete preferences, compare meaningful alternatives, or negotiate a personalized deal.
+---
 
-## Solution
+## AI AGENTS
 
-DealMate AI uses three specialized agents:
+### 🧠 Preference Agent
 
-### 1. Preference Agent
 Understands:
-- Customer preferences
+
 - Budget
-- Product category
+- Category
+- Product requirements
 - Shopping priorities
 
-### 2. Deal-Hunter Agent
-Searches the product catalog and identifies:
-- Relevant products
+### 🔎 Deal-Hunter Agent
+
+Finds:
+
+- Products
 - Prices
-- Ratings
 - Discounts
+- Ratings
 - Alternatives
 
-### 3. Negotiation Agent
-Creates:
-- Individual discounts
-- Product bundles
-- Better offers
+### 🤝 Negotiation Agent
 
-The negotiation remains within seller-defined discount limits.
+Identifies:
 
-## Technology
+- Bundles
+- Additional savings
+- Better value
+- Negotiation opportunities
 
-- HTML
-- CSS
-- JavaScript
-- LocalStorage
-- GitHub Pages
+---
 
-## Future Development
+## FEATURES
 
-- Real AI agents
-- Product APIs
-- Live inventory
-- Seller negotiation API
-- Secure authentication
-- Payment integration
-- Database
-- Voice shopping
+- Product category selection
+- Laptop selection
+- Headphones selection
+- Shoes selection
+- Product search
+- Budget input
+- Shopping priority
+- Requirements
+- AI processing simulation
+- Deal comparison
+- Price comparison
+- Savings display
+- Save deal
+- AI negotiation
+- Bundle recommendation
+- Login prototype
+- Success page
+- Responsive mobile design
+
+---
+
+## TECHNOLOGY
+
+HTML
+CSS
+JavaScript
+
+No external libraries are required.
+
+---
+
+## PROJECT STRUCTURE
+
+index.html
+login.html
+app.html
+results.html
+success.html
+style.css
+script.js
+README.md
+
+---
+
+## FLOW
+
+Home
+↓
+Get Started
+↓
+Choose Category
+↓
+Enter Product Details
+↓
+AI Processing
+↓
+Deal Results
+↓
+Select Deal
+↓
+Negotiation
+↓
+Deal Confirmation
+
+---
+
+## IMPORTANT
+
+This is a frontend prototype.
+
+Real AI agents, live product APIs,
+seller negotiation, authentication,
+payments and databases require a backend.
+
+---
+
+© 2026 DealMate AI
